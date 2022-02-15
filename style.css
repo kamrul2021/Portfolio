@@ -1,0 +1,724 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-family: 'PT Serif', serif;
+	/*font-family: 'Courgette', cursive;*/
+	/*font-family: 'Ubuntu Condensed', sans-serif;*/
+}
+
+/* navbar desing start*/
+img{
+	width:80px;
+	height:80px;
+	margin-left:-10px;
+}
+body{
+	margin:0;
+}
+/* universal desing and size for h1, link, and p start*/
+h1{
+	font-size: 2.5rem;
+	text-align:center;
+}
+
+a{
+	font-size:1.2rem;
+	color:white;
+	text-decoration:none;
+}
+p{
+	font-size:1.2rem;
+	text-align:justify;
+}
+
+.dotted-hr{
+	border:dotted 6px white;
+	border-bottom:none;
+	width:70px;
+	margin:20px auto;
+}
+/* universal desing and size for h1, link, and p end*/
+
+
+/*for floating*/
+
+[class*="col-"]{
+	float:left;
+	padding:10px;
+}
+
+/*for Mobile*/
+
+[class*="col-"]{
+	width:100%;
+}
+
+.nav{
+	background-color:#05803D;
+	text-align:center;
+	padding:0.5% 7%;
+}
+
+.nav-heading h1{
+	color:white;
+	margin:0;
+	padding-top:10px;
+}
+
+.nav-menu{
+	display:flex;
+	flex-direction:column;
+	text-transform:uppercase;
+	
+}
+
+.nav-menu a{
+	background-color:#21B105;
+	margin:7px 0px;
+	padding:10px;
+	border-radius:10px;
+}
+
+.nav-menu a:hover{
+	background-color:gray;
+}
+
+
+/*for div clear*/
+
+.nav::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+/* navbar desing end*/
+
+/*profile design start*/
+.profile{
+	padding:130px 10px;
+	text-align:center;
+	
+	position:relative;
+}
+
+.profile .top-icon{
+	position:absolute;
+	right:80px;
+	top:20px;
+	transition:2s;
+}
+.profile .top-icon:hover{
+	transform:rotate(360deg);	
+}
+
+.profile-desc{
+	transition:2s;
+}
+
+.profile-desc:hover{
+	transform:scale(1.2);
+	text-shadow:5px 10px 15px green;
+}
+
+.profile-desc h1{
+	font-family: 'Courgette', cursive;
+	font-size:3rem;
+}
+
+.profile-desc p{
+	text-align:center;
+	color:gray;
+	margin:30px auto 100px auto;
+}
+
+.profile .bottom-icon{
+	position:absolute;
+	left:80px;
+	bottom:20px;
+	transition:2s;
+}
+.profile .bottom-icon:hover{
+	transform:rotate(360deg);	
+}
+
+.profile::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+/*profile design end*/
+
+
+/*professiona skill start*/
+
+
+/*work Experience start*/
+.work-experience{
+		background-color:#747876;
+		border-radius:5px;
+		padding:20px;
+		margin-top:2px;
+		transition:0.2s;
+		border-right:2px solid white;
+		height:630px;
+	
+}
+.work-experience:hover{
+	box-shadow:5px 5px 10px 5px #232423;
+	transform:scale(1.01);
+	
+}
+
+.work-experience img{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	display:block;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:25px;
+	
+}
+.round-border{
+	border:3px solid white;
+	border-radius:50%;
+	padding:7px;
+}
+
+.work-experience h2{
+	background-color:#404241;
+	color:white;
+	padding:10px;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:20px;
+	border-radius:5px;
+	
+	
+}
+.work-experience h2:hover{
+	background-color:blue;
+}
+
+.work-experience p{
+	text-align:justify;
+	font-size:0.9rem;
+	color:white;
+	
+}
+
+.work-experience ol:hover{
+	background-color:#19345e;
+	transition:0.2s;
+	border-radius:3px;
+}
+.work-experience hr{
+	width:100%;
+	margin-top:5px;
+	margin-bottom:10px;
+	
+}
+.work-experience strong{
+	color:orange;
+	
+}
+/*work Experience end*/
+
+
+/*education info start*/
+.education-info{
+		background-color:#747876;
+		border-radius:5px;
+		padding:20px;
+		margin-top:2px;
+		transition:0.2s;
+		border-right:2px solid white;
+		height:630px;
+}
+.education-info:hover{
+	box-shadow:5px 5px 10px 5px #232423;
+	transform:scale(1.01);
+	
+}
+
+.education-info img{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	display:block;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:25px;
+	
+}
+.round-border{
+	border:3px solid white;
+	border-radius:50%;
+	padding:7px;
+}
+
+.education-info h2{
+	background-color:#404241;
+	color:white;
+	padding:10px;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:20px;
+	border-radius:5px;
+	
+}
+.education-info h2:hover{
+	background-color:blue;
+}
+
+.education-info p{
+	text-align:justify;
+	font-size:0.9rem;
+	color:white;
+	
+}
+
+.education-info ol:hover{
+	background-color:#19345e;
+	transition:0.2s;
+	border-radius:3px;
+}
+.education-info hr{
+	width:100%;
+	margin-top:5px;
+	margin-bottom:10px;
+	
+}
+.education-info strong{
+	color:orange;
+	
+}
+/*education info end*/
+
+
+/*skill Info start*/
+.skill{
+		background-color:#747876;
+		border-radius:5px;
+		padding:20px;
+		margin-top:2px;
+		transition:0.2s;
+		border-right:2px solid white;
+		height:630px;
+}
+.skill:hover{
+	box-shadow:5px 5px 10px 5px #232423;
+	transform:scale(1.01);
+	
+}
+
+.skill img{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	display:block;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:25px;
+	
+}
+.round-border{
+	border:3px solid white;
+	border-radius:50%;
+	padding:7px;
+}
+
+.skill h2{
+	background-color:#404241;
+	color:white;
+	padding:10px;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:20px;
+	border-radius:5px;
+	
+}
+.skill h2:hover{
+	background-color:blue;
+}
+.skill ul{
+	list-style-type:none;
+	font-size:1.2rem;
+	color:white;
+	
+}
+.skill ul li{
+	margin:25px 0px;
+	position:relative;
+	
+}
+
+.skill ul li::before{
+	content:'';
+	width:100%;
+	height:10px;
+	background-color:#7487f2;
+	top:calc(100% + 5px);
+	left:0;
+	border-radius:5px;
+	position:absolute;
+}
+
+.skill ul li::after{
+	content:'';
+	width:0%;
+	height:10px;
+	background-color:#4d65f0;
+	top:calc(100% + 5px);
+	left:0;
+	border-radius:5px;
+	position:absolute;
+	
+	animation-duration:4s;
+	animation-delay:1s;
+	animation-iteration-count:3;
+	animation-fill-mode:forwards;
+}
+
+.skill ul li.html::after{
+	animation-name:html;
+}
+@keyframes html{
+	to{
+		width:95%;
+	}
+}
+
+.skill ul li.css::after{
+	animation-name:css;
+}
+@keyframes css{
+	to{
+		width:85%;
+	}
+}
+
+.skill ul li.word::after{
+	animation-name:word;
+}
+@keyframes word{
+	to{
+		width:99%;
+	}
+}
+
+.skill ul li.excel::after{
+	animation-name:excel;
+}
+@keyframes excel{
+	to{
+		width:90%;
+	}
+}
+
+.skill ul li.access::after{
+	animation-name:access;
+}
+@keyframes access{
+	to{
+		width:50%;
+	}
+}
+
+.skill ul li.powerpoint::after{
+	animation-name:powerpoint;
+}
+@keyframes powerpoint{
+	to{
+		width:70%;
+	}
+}
+
+.skill ul li.photoshop::after{
+	animation-name:photoshop;
+}
+@keyframes photoshop{
+	to{
+		width:85%;
+	}
+}
+
+.skill ul li.illustrator::after{
+	animation-name:illustrator;
+}
+@keyframes illustrator{
+	to{
+		width:75%;
+	}
+}
+
+/*skill Info end*/
+
+.professional-skill-container::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+/*professiona skill end*/
+
+
+/*About Me Start*/
+.about-me{
+	padding:1% 7%;
+	background-color:cadetblue;
+	text-align:center;
+	color:white;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+.about-me-hr{
+	margin:10px;
+	width:100%;
+}
+.about-me h1:hover{
+	cursor:pointer;
+	text-decoration:underline;
+	color:orange;
+}
+
+.about-me-img img {
+	border:5px solid white;
+	width:220px;
+	height:240px;
+	border-radius:50%;
+	margin-top:30px;
+	transition:1.5s;
+	
+}
+
+.about-me-img img:hover{
+	transform:scale(1.2);
+	box-shadow:10px 15px 20px orange;
+}
+.about-me-desc p{
+	color:white;
+	font-size:1.2rem;
+}
+.about-me-desc p a:hover{
+	color:orange;
+	text-decoration:underline;
+}
+.cv-button{
+	width:115px;
+	padding:10px;
+	border-radius:10px;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:0.9rem;
+	margin:10px;
+}
+.cv-button:hover{
+	background-color:orange;
+	color:white;
+}
+
+.about-me::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+/*About Me end*/
+
+/*Contact and Achievement start*/
+.contact-achievement{
+margin-top:1px;
+
+}
+.achievements{
+	background-color:#0398fc;
+	padding:10px;
+	height:450px;
+	border-right:1px solid white;
+}
+.achievements h2{
+	color:white;
+	text-align:center;
+	font-size:1.9rem;
+}
+.achievements p{
+	text-align:justify;
+}
+.achievements p:hover{
+	background-color:#0482c9;
+}
+.achievements h4{
+	color:#fcdb03;
+	text-decoration:underline;
+}
+
+/*Contact Me start*/
+.contact-me{
+	background-color:#0398fc;
+	padding:10px;
+	text-align:center;
+	height:450px;
+	border-right:1px solid white;
+}
+.contact-me h2{
+	color:white;
+	text-align:center;
+	font-size:1.9rem;	
+}
+.contact-me input{
+	border:none;
+	border-radius:5px;
+	width:100%;
+	padding:10px;
+	margin-bottom:10px;
+	text-align:center;
+}
+.contact-me textarea{
+	border:none;
+	border-radius:5px;
+	width:100%;
+	padding:10px;
+	margin-bottom:5px;
+	text-align:center;
+	resize:none;
+}
+.contact-me button{
+	padding:8px;
+	border-radius:10px;
+	margin-right:10px;
+	margin-left:10px;
+	width:90px;
+	background-color:gray;
+	cursor:pointer;
+	padding:10px;
+	font-size:1rem;
+	font-weight:bold;
+}
+.contact-me button:hover{
+	background-color:orange;
+}
+
+/*Contact Me end*/
+
+/*more way contac start*/
+.Social-icon{
+	background-color:#0398fc;
+	padding:10px;
+	height:450px;
+}
+.Social-icon h2{
+	color:white;
+	text-align:center;
+	font-size:1.9rem;
+}
+.icon-left{
+	width:50%;
+	padding:10px;
+	float:left;
+}
+.icon-left ul{
+	list-style-type:none;
+	text-align:right;
+}
+.icon-left ul li{
+	margin:15px;
+}
+.icon-left ul li a{
+	text-decoration:none;
+}
+.icon-left ul li a img{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+}
+.icon-left ul li a img:hover{
+	transform:scale(1.1);
+	box-shadow:5px 5px 8px gray;
+}
+
+.icon-right{
+	width:50%;
+	padding:10px;
+	float:left;
+}
+.icon-right ul{
+	list-style-type:none;
+	text-align:left;
+}
+.icon-right ul li{
+	margin:15px;
+}
+.icon-right ul li a{
+	text-decoration:none;
+}
+.icon-right ul li a img{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+}
+.icon-right ul li a img:hover{
+	transform:scale(1.1);
+	box-shadow:5px 5px 8px gray;
+}
+/*more way contac end*/
+
+.contact-achievement::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+/*Contact and Achievement end*/
+
+/*Footer Start*/
+.footer{
+	background-color:black;
+	text-align:center;
+	min-height:40px;
+
+	
+}
+
+.footer-menu{
+	
+	float:left;
+	margin-left:80px;
+	padding-top:7px;
+
+	
+}
+
+.footer-menu a{
+	
+	text-decoration:none;
+	padding:10px;
+	margin-top:10px;
+	margin-left:20px;
+
+	
+}
+
+.footer-menu a:hover{
+	color:gray;
+
+	
+}
+.footer-message{
+	color:white;
+	margin-left:300px;
+	float:left;	
+	
+}
+
+span{
+	color:red;
+	font-size:2rem;
+}
+
+.footer::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+/*Footer End*/
+
